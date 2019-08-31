@@ -1,0 +1,288 @@
+/*20190831_全域設定之CSS設定 By:SaraLiang */
+
+
+/** 
+ * Resume Style
+ * Standard Layout (all parts) for Little Homepage
+ * @author SaraLiang
+ * @copyright 2019 by the author
+ *
+ */
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	padding: 0px;
+	margin: 0px;
+	font-size: 14px;
+	line-height: 1.2;
+	color: #333;
+	background-color: #fff;
+	font-family: Muli, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+* {
+	box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+ul,
+ol {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+a,
+a:hover,
+a:focus {
+	margin: 0px;
+	padding: 0px;
+	text-decoration: none;
+}
+
+img {
+	height: auto;
+}
+
+p {
+	color: #868e96;
+	display: block;
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+	letter-spacing: 1px;
+	font-family: 'Noto Sans TC', Muli, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+h1,
+h2,
+h3,
+h4 {
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+h1 {
+	/*大字標題黑字(封面)*/
+	font-size: 48px;
+	line-height: 30px;
+	margin: 40px0;
+}
+
+h2 {
+	/*大字標題藍字(封面)*/
+	font-size: 46px;
+	line-height: 30px;
+	margin: 40px 0;
+}
+
+h3 {
+	/*區塊大標題*/
+	font-size: 34px;
+	line-height: 30px;
+	margin: 100px 0 0 0;
+}
+
+h4 {
+	/*項目副藍字標題*/
+	font-size: 22px;
+	line-height: 5px;
+	color: #0A50EB;
+}
+
+h5 {
+	/*年份藍色標題*/
+	font-size: 16px;
+	font-size: 10px;
+	line-height: 5px;
+	color: #0A50EB;
+}
+
+section {
+	padding: 250px 0;
+	margin: 0 60px;
+	border-top-style: solid;
+	border-color: #ccc;
+	border-width: 1px;
+}
+
+section:first-child {
+	padding: 250px 0;
+	margin: 0 60px;
+	border-style: none;
+}
+
+section:last-child {
+	padding: 250px 0;
+	margin: 0 60px;
+	border-style: none;
+}
+
+.clearfix {
+	clear: both;
+}
+
+nav ul {
+	margin: 0;
+	list-style-type: none;
+}
+
+nav li {
+	font-size: 20px;
+	padding: 10px 20px;
+}
+
+nav a {
+	color: #FFFFFF;
+	font-weight: bold;
+}
+
+.wrap {
+	width: 100%;
+	margin: 0 auto;
+	padding: 0;
+	background-color: #fff;
+}
+
+.tb_outside {
+	/* 以表格方式做垂直置中：table */
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+
+.tb_inside {
+	/* 以表格方式做垂直至中：table-cell */
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
+
+
+/* 右方完整內容區塊 */
+
+.container {
+	width: 85%;
+	margin: 30px;
+	float: right;
+	margin: 0 auto;
+	position: relative;
+}
+
+
+/******************內頁內容開始******************/
+
+
+/*Header 之CSS設定 By:SaraLiang 20190831*/
+
+
+/*指定id使用#符號*/
+
+
+/*指定class使用.符號*/
+
+
+/*Header 內的LOGO+選單列表設定*/
+
+
+/******************左側選單******************/
+
+#header {
+	float: left;
+	width: 15%;
+	position: fixed;
+	z-index: 100;
+	height: 100%;
+}
+
+.menu {
+	background-color: #0A50EB;
+	height: 100%;
+}
+
+.menubar_img_square {
+	text-align: center;
+	border-radius: 50%;
+	width: 50%;
+}
+
+
+/******************右側區塊：about******************/
+
+.about {
+	float: right;
+	position: relative;
+	z-index: 100;
+	padding: 160px 0;
+	text-align: left;
+}
+
+.community_icon {
+	color: #c0c0c0;
+	line-height: 40px;
+	font-size: 19px;
+	margin-right: 7px;
+}
+
+.community_icon a:link,
+.community_icon a:visited,
+.community_icon a:active {
+	color: #c0c0c0;
+	margin: 0px 10px 0px 10px;
+}
+
+
+/******************右側區塊：experience******************/
+
+.experience {
+	float: right;
+	position: relative;
+	z-index: 100;
+	padding: 160px 0;
+	text-align: left;
+}
+
+.experience_items {
+	position: relative;
+}
+
+.experience_content {
+	width: 80%;
+}
+
+.experience_year {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+
+
+/******************右側區塊：skill******************/
+
+.skill_workflow li {
+	color: #868e96;
+	margin: 0px 10px 0px 10px;
+	line-height: 20px;
+}
+
+.skill_workflow i {
+	margin: 0 10px 0 0;
+}
