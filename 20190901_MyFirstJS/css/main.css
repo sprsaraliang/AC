@@ -1,0 +1,184 @@
+/*20190831_全域設定之CSS設定 By:SaraLiang 20190831*/
+
+
+/** 
+ * Homepage Style hi!這是一個簡易的投票測試JS的作業提交
+ * Standard Layout (all parts) for Little Homepage
+ * @author SaraLiang
+ * @copyright 2019 by the author
+ *
+ */
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	padding: 0px;
+	margin: 0px;
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: #333;
+	background-color: #fff;
+	font-family: 'Montserrat', sans-serif;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+ul,
+ol {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+.container {
+	width: 70%;
+	max-width: 1170px;
+	margin: 0 auto;
+	position: relative;
+	text-align: center;
+}
+
+p {
+	color: #767676;
+	display: block;
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+}
+
+h2 {
+	text-align: left;
+	font-size: 40px;
+	padding: 15px;
+	line-height: 50px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+
+/*******全站共用按鈕樣式******/
+
+.btn_like {
+		margin: 20px 0 20px 0px;
+	color: #3b5998;
+	height: 15px;
+	width: 15px;
+}
+.btn_unlike {
+	margin: 20px 0 20px 0px;
+	color: #ff0000;
+	height: 15px;
+	width: 15px;
+}
+
+.all_btn a:hover {
+	-webkit-transition: all .2s linear;
+	/*Google Chrome 及 Safari轉場效果*/
+	-moz-transition: all .2s linear;
+	/*FireFox轉場效果*/
+	-ms-transition: all .2s linear;
+	/*Google Chrome 及 Safari轉場效果*/
+	-o-transition: all .2s linear;
+	/*Internet Explorer轉場效果*/
+	transition: all .2s linear;
+	/*其他瀏覽器轉場效果*/
+}
+
+
+/******************內頁內容開始******************/
+
+.menubar_menu {
+	float: right;
+}
+
+.clearfix {
+	clear: both;
+}
+
+.clearfix::after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+
+/*設定所有section的padding*/
+
+section {
+	padding: 100px 0;
+}
+
+
+/******votepager******/
+
+.vote_list img {
+	height: auto;
+	display: block;
+	border-radius: 50%;
+	margin: 10px;
+}
+
+.votepage {
+	padding-top: 40px;
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.vote_list {
+	margin: 0 auto;
+}
+
+.vote_item {
+	float: left;
+	padding: 15px;
+	margin: 0 auto;
+}
+.vote_total{
+	margin: 20px;
+}
+
+.vote_item i {
+	height: 20px;
+}
+
+.vote_item a {
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+
+.vote_item a:hover {
+	/* box-shadow後面的 5 個數值分別是設定：水平陰影位移、垂直陰影位移、陰影模糊程度、陰影的範圍大小，最後一個是陰影的顏色。*/
+	top: -5px;
+	-webkit-transition: all .2s linear;
+	/*Google Chrome 及 Safari轉場效果*/
+	-moz-transition: all .2s linear;
+	/*FireFox轉場效果*/
+	-ms-transition: all .2s linear;
+	/*Google Chrome 及 Safari轉場效果*/
+	-o-transition: all .2s linear;
+	/*Internet Explorer轉場效果*/
+	transition: all .2s linear;
+	/*其他瀏覽器轉場效果*/
+}
