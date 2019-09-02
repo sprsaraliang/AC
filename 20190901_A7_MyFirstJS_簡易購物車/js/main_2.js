@@ -31,7 +31,7 @@ function priceTopay(){
 function priceTotal(){
   console.log("Subtotal：$"+total);
   console.log("Added shipping：$"+shippingCost);
-  console.log("Final Price$："+pay);
+  console.log("Final Price$：$"+pay);
 }
 
 addItemToCart('skirt');
