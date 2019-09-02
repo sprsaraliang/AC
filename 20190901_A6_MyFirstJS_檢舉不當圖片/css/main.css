@@ -49,8 +49,8 @@ ol {
 }
 
 .container {
-	width: 70%;
-	max-width: 1170px;
+	width: 85%;
+	max-width: 1300px;
 	margin: 0 auto;
 	position: relative;
 	text-align: center;
@@ -82,12 +82,15 @@ h2 {
 	color: #3b5998;
 	height: 15px;
 	width: 15px;
+	 font-size : 18px;
 }
 .btn_unlike {
 	margin: 20px 0 20px 0px;
 	color: #ff0000;
 	height: 15px;
 	width: 15px;
+
+	 font-size : 18px;
 }
 
 .all_btn a:hover {
