@@ -1,4 +1,4 @@
-const catalog = {
+﻿const catalog = {
   hoodie: 1000,
   shorts: 300,
   't-shirt': 220,
@@ -17,20 +17,23 @@ var pay = 0;
 // add items
 function addItemToCart(product){
  total+=catalog[product];
- priceTopay();
 }
 
 //消費金額沒有到達 $4000 門檻，需要支付運費 $140
-function priceTopay(){
+function pricePay(){
  if (total <4000){
-  pay=total+shippingCost;
+   pay=total+shippingCost;
+   console.log("Added shipping：$"+shippingCost);
+ }else {
+   pay=total;
+   console.log("Added shipping：免運費");
  }
 }
 
 // print total
 function priceTotal(){
   console.log("Subtotal：$"+total);
-  console.log("Added shipping：$"+shippingCost);
+  pricePay();
   console.log("Final Price$：$"+pay);
 }
 
