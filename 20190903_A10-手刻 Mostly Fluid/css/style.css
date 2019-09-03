@@ -1,0 +1,191 @@
+/*20190903_全域設定之CSS設定 By:SaraLiang */
+
+
+/** 
+ * 手刻 Mostly Fluid 
+ * Standard Layout (all parts) for Little Homepage
+ * @author SaraLiang
+ * @copyright 2019 by the author
+ *
+ */
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background: #FFF;
+  color: #FFF;
+  font-family: 'Noto Sans TC', Muli, -apple-system;
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
+}
+
+p {
+  color: #868e96;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  letter-spacing: 1px;
+  font-family: 'Noto Sans TC', Muli, -apple-system;
+}
+
+.clearfix {
+  clear: both;
+}
+
+
+.wrapper {
+  margin: 50px auto;
+  height: 100%;
+  padding: 0;
+}
+
+/**************************************
+CSS TO MAKE THE EXAMPLE LOOK PRETTY
+**************************************/
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background: #FFF;
+  color: #FFF;
+  font-family: 'Open Sans';
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
+}
+
+.one, .two, .three, .four, .five, .six, .seven {
+  border: 2px solid;
+  box-sizing: border-box;
+  min-height: 100px;
+  min-width: 160px;
+  line-height: 100px;
+  float: left;
+}
+
+
+.one {
+  background-color: #E1CA96;
+}
+
+.two {
+  background-color: #42D9C8;
+}
+
+.three {
+  background-color: #FFA69E;
+}
+
+.four {
+  background-color: #E5989B;
+}
+
+.five {
+  background-color: #E5689B;
+}
+
+.six {
+  background-color: #FF686B;
+}
+
+.seven {
+  background-color: #6D6875;
+}
+
+@media screen and (max-width: 600px) {
+
+  .one,
+  .two,
+  .three,
+  .four,
+  .five,
+  .six,
+  .seven {
+  clear: both;
+  width: 100%;
+  }
+
+}
+
+
+
+@media screen and (min-width: 601px) and (max-width: 899px) {
+
+  .one {
+    width: 100%;
+    clear: both;
+  }
+  .two {
+    width: 50%;
+    float: left;
+  }
+  .three {
+    width: 50%;
+    float: left;
+  }
+  .four {
+    width: 100%;
+    clear: both;
+  }
+  .five {
+    width: 50%;
+    float: left;
+  }
+  .six {
+    width: 50%;
+    float: left;
+  }
+  .seven {
+    width: 100%;
+    clear: both;
+  }
+
+
+}
+
+@media screen and (min-width: 900px) {
+
+  .one {
+    width: 66.666%;
+    float: left;
+  }
+  .two {
+    width: 33.333%;
+    float: left;
+  }
+
+  .three {
+    width: 33.333%;
+    float: left;
+  }
+  .four {
+    width: 33.333%;
+    float: left;
+  }
+  .five {
+    width: 33.333%;
+    float: left;
+  }
+  .six {
+    width: 50%;
+    float: left;
+  }
+  .seven {
+    width: 50%;
+    float: left;
+  }
+
+
+}

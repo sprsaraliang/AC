@@ -177,7 +177,6 @@ nav a {
 }
 
 
-/* 右方完整內容區塊 */
 
 .container {
 	width: 85%;
@@ -190,18 +189,9 @@ nav a {
 
 /******************內頁內容開始******************/
 
-
 /*Header 之CSS設定 By:SaraLiang 20190831*/
-
-
 /*指定id使用#符號*/
-
-
 /*指定class使用.符號*/
-
-
-/*Header 內的LOGO+選單列表設定*/
-
 
 /******************左側選單******************/
 
@@ -225,7 +215,7 @@ nav a {
 }
 
 
-/******************右側區塊：about******************/
+/******************about******************/
 
 .about {
 	float: right;
@@ -238,8 +228,7 @@ nav a {
 .community_icon {
 	color: #c0c0c0;
 	line-height: 40px;
-	font-size: 19px;
-	margin-right: 7px;
+	font-size: 28px;
 }
 
 .community_icon a:link,
@@ -247,10 +236,11 @@ nav a {
 .community_icon a:active {
 	color: #c0c0c0;
 	margin: 0px 10px 0px 10px;
+	margin:2px 5px;
 }
 
 
-/******************右側區塊：experience******************/
+/******************experience******************/
 
 .experience {
 	float: right;
@@ -275,7 +265,7 @@ nav a {
 }
 
 
-/******************右側區塊：skill******************/
+/******************skill******************/
 
 .skill_workflow li {
 	color: #868e96;
