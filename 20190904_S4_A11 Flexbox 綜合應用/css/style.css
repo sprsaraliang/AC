@@ -1,0 +1,121 @@
+/**************************************
+FIXED LAYOUT CSS
+**************************************/
+
+.wrapper {
+  margin: 50px auto;
+  overflow: hidden;
+}
+
+
+/**************************************
+CSS TO MAKE THE EXAMPLE LOOK PRETTY
+**************************************/
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background: #FFF;
+  color: #FFF;
+  font-family: 'Open Sans';
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
+}
+
+.one,
+.two,
+.two-a,
+.two-b,
+.two-c,
+.three,
+.img {
+  border: 2px solid;
+  box-sizing: border-box;
+}
+
+.one,
+.two,
+.three {
+  padding: 20px;
+  background-color: #163A59;
+  color: #FF6600;
+}
+
+.two-a,
+.two-b,
+.two-c {
+  padding: 15px;
+  font-size: 30px;
+  margin: 10px;
+  background-color: #36C1CE;
+  color: #FFF;
+}
+
+.two-a {
+  min-height: 200px;
+  padding: 0;
+}
+
+.img {
+  padding: 40px;
+  font-size: 20px;
+  background-color: #FF6600;
+  color: #163A59;
+}
+
+@media screen and (min-width: 600px) {
+  .wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  .two {
+    display: flex;
+    flex-flow: column wrap;
+  }
+  .one,
+  .three {
+    flex-grow: 1;
+  }
+  .two-a {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .img {
+    margin: 10px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .wrapper {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .two {
+    width: 60%;
+    display: flex;
+    flex-flow: column wrap;
+  }
+  .one,
+  .three {
+    flex-grow: 1;
+  }
+  .two-a {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .img {
+    margin: 10px;
+  }
+}

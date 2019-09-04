@@ -4,8 +4,7 @@ let autoGuess; //亂數
 let answerTimes = 0; //關主輸入值
 
 function issue() {
-	answerInput = prompt("請輸入您要讓電腦猜的數字，限制1~100以內", "101");
-
+	
 	while (!(answerInput >= 1 && answerInput <= 100)) { //如果輸入正確的1~100則電腦開始猜正確答案
 		answerInput = prompt("請輸入您要讓電腦猜的數字，限制1~100以內", "");
 	}
