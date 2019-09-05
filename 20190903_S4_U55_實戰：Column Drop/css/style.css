@@ -1,0 +1,109 @@
+/**************************************
+FIXED LAYOUT CSS
+**************************************/
+
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 0 10px;
+}
+
+/* nav, main, aside {
+  float: left;
+} */
+
+header,
+nav,
+main,
+aside,
+footer {
+  width: 100%;  
+}
+
+
+header, footer {
+  background-color: #882B0B;
+/*   width: 100%; */
+}
+
+main {
+/*   width: 60%; */
+  background-color: #D96941;
+}
+
+aside {
+/*   width: 20%; */
+  background-color: #F2A057;
+}
+
+nav {
+/*   width: 20%; */
+  background-color: #F2C879;
+}
+
+
+/**************************************
+CSS TO MAKE THE EXAMPLE LOOK PRETTY
+**************************************/
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background: #FF9999;
+  color: #FFF;
+  font-family: Helvetica;
+  text-align: center;
+  margin: 0;
+}
+
+header, footer {
+/*   clear: both; */
+  padding: 20px 0;
+}
+
+nav, aside, main {
+  box-sizing: border-box;
+  min-height: 400px;
+  min-width: 160px;
+  line-height: 400px;
+}
+
+nav {
+  min-height: 60px;
+  max-height: 60px;
+  line-height: 60px;
+}
+
+
+
+@media screen and (min-width: 600px)  {
+  
+  main {   
+    width: 70%;  
+  }
+
+  aside {   
+    width: 30%;  
+  }
+}
+
+@media screen and (min-width: 900px) {
+  main {
+    width: 60%;
+  }
+
+  nav, aside {
+    width: 20%;
+  }
+
+  nav {
+    min-height: 400px;
+    line-height: 400px;
+  }
+}

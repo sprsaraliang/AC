@@ -1,0 +1,33 @@
+/**************************************
+S4_A12 CSS Grid 上手
+**************************************/
+
+.wrapper div {
+  background-color: #163a59;
+  font-family: 'Open Sans';
+  font-size: 30px;
+  color:#FF6600;
+  text-align: center;
+  border: 2px solid;
+}
+
+/**************************************
+CSS TO MAKE THE EXAMPLE LOOK PRETTY
+**************************************/
+
+/**************************************
+規格說明：
+
+建立一個有四列和兩行的 grid (總共會有八個 grid item)。
+第一列和第二列的寬度應該各為 200px。
+第三列和第四列的寬度應該各為 100px。
+兩行的高度應該分別為 50px 和 100px。
+在行與行之間有 20px 的間隔，列與列之間有 10px 的間隔。
+**************************************/
+
+.wrapper {
+  display: grid;
+  grid-template-columns:200px 100px 100px 200px;
+  grid-template-rows: 50px 100px;
+  grid-gap: 5px 20px;
+}

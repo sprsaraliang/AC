@@ -1,0 +1,114 @@
+/*20190903_全域設定之CSS設定 By:SaraLiang */
+
+
+/** 
+ * 手刻 Mostly Fluid 
+ * Standard Layout (all parts) for Little Homepage
+ * @author SaraLiang
+ * @copyright 2019 by the author
+ *
+ */
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	background: #FFF;
+	color: #FFF;
+	font-family: 'Noto Sans TC', Muli, -apple-system;
+	font-weight: 700;
+	text-align: center;
+	margin: 0;
+}
+
+p {
+	color: #868e96;
+	display: block;
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+	letter-spacing: 1px;
+	font-family: 'Noto Sans TC', Muli, -apple-system;
+}
+
+.clearfix {
+	clear: both;
+}
+
+
+.wrapper {
+  margin: 50px auto;
+  height: 100%;
+  padding: 0;
+}
+
+/**************************************
+CSS TO MAKE THE EXAMPLE LOOK PRETTY
+**************************************/
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background: #FFF;
+  color: #FFF;
+  font-family: 'Open Sans';
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
+
+}
+
+.flex-container {
+  min-height: 400px;
+  max-height: 460px;
+  background-color: #163a59;
+  border: 3px solid #ff6600;
+  padding: 1rem;
+  margin: 2rem 0 0;
+  width: 600px;
+/*當 display: flex;啟用時，div內所包含的項目即有欄 (column) 或是列 (row)的概念排列，
+  1/可於CSS設定「排列」主軸排列方向>flex-direction:row 橫| column直|row-reverse直反向|column-reverse橫反向
+  2/可於CSS設定「包裝」項目排列結構>flex-wrap:no-wrap不拆列直接縮小| wrap按照外框拆列 |wrap-reverse 按照外框反向拆列
+    ＊＊以上排列包裝可簡單寫成：flex-flow: row wrap;結構為　flex-flow: 「排列方式」 「包裝方式」;
+  3/可於CSS設定「間隔」主軸的對齊方式>justify-content:center
+　  常用：justify-content:left 靠左 |  flex-end 靠右 | center置中 |
+　  特別：justify-content:space-between　每個小方塊擁有相同的間隔，但與父容器之間沒有間隔。
+　  特別：justify-content:space-around　每個小方塊之間與父容器有間隔，但小方塊與父容器之間的間隔是小方塊彼此間隔的一半。
+　  特別：justify-content:space-evenly　每個小方塊之間和與父容器之間擁有相同的間隔。（比較美觀）
+  4/可於CSS設定「交叉軸上排版」align-items: center;
+   常用：align-items:center垂直置中
+   特別：align-items:flex-start 水平線靠下
+   特別：align-items:flex-end水平線靠下
+   特別：align-items:center垂直置中
+   特別：align-items:baseline 先把內容對齊 baseline，item 隨著跑 (通常文字下緣對齊的地方稱為 baseline）
+   特別：align-items:stretch (預設) ，除非特別指定的 width or height ，否則會延展填滿容器空間
+*/
+
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: no-wrap;
+
+}
+
+.flex-item {
+  height: 100px;
+  width: 100px;
+  color: #ffffff;
+  background-color: #ff6600;
+  border: 1px solid #ff6600;
+  margin: 3px;
+  font-family: 'Open Sans';
+  font-size: 40px;
+  text-align: center;
+  line-height: 100px;
+}
+
