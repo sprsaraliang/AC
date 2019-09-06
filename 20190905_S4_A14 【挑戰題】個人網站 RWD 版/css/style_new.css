@@ -190,7 +190,7 @@ li {
 }
 
 .home_bg {
-	background-image: url('../images/profile.jpg');
+	background-image: url('https://fakeimg.pl/960x514/93CCC3/ffffff/?text=960x514');
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -257,7 +257,7 @@ hr.hr_line {
 }
 
 .quotes_bg {
-	background-image: url('../images/abg.jpg');
+	background-image: url('https://fakeimg.pl/1920x453/93CCC3/ffffff/?text=1920x453');
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
