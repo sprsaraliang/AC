@@ -12,9 +12,7 @@ FIXED LAYOUT CSS
 CSS TO MAKE THE EXAMPLE LOOK PRETTY
 **************************************/
 
-*,
-*:before,
-*:after {
+*, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -30,28 +28,18 @@ body {
   margin: 0;
 }
 
-.one,
-.two,
-.two-a,
-.two-b,
-.two-c,
-.three,
-.img {
+.one, .two, .two-a, .two-b, .two-c, .three, .img {
   border: 2px solid;
   box-sizing: border-box;
 }
 
-.one,
-.two,
-.three {
+.one, .two, .three {
   padding: 20px;
   background-color: #163A59;
   color: #FF6600;
 }
 
-.two-a,
-.two-b,
-.two-c {
+.two-a, .two-b, .two-c {
   padding: 15px;
   font-size: 30px;
   margin: 10px;
@@ -71,51 +59,39 @@ body {
   color: #163A59;
 }
 
-@media screen and (min-width: 600px) {
-  .wrapper {
+/* Mobile First*************************/
+.wrapper {
     display: flex;
-    flex-flow: row nowrap;
-  }
-  .two {
-    display: flex;
-    flex-flow: column wrap;
-  }
-  .one,
-  .three {
-    flex-grow: 1;
-  }
-  .two-a {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-  .img {
-    margin: 10px;
-  }
+    flex-flow: column nowrap;
 }
 
-@media screen and (min-width: 900px) {
-  .wrapper {
-    display: flex;
-    flex-flow: row wrap;
-  }
-  .two {
-    width: 60%;
+.two { 
     display: flex;
     flex-flow: column wrap;
-  }
-  .one,
-  .three {
-    flex-grow: 1;
-  }
-  .two-a {
+}
+
+.two-a { /*圖片區*/
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row wrap; 
     justify-content: space-evenly;
     align-items: center;
-  }
-  .img {
-    margin: 10px;
-  }
 }
+
+/***************************************/
+
+@media screen and (min-width: 620px) {
+   .wrapper {
+    flex-flow: row wrap;
+  }
+
+  .two { 
+    flex-basis: 60%;    
+  }
+  
+  .one,
+  .three {
+   flex-basis:20%;
+  }
+
+}
+
