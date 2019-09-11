@@ -1,0 +1,16 @@
+/*Sara Liang's 20190909_S5_A15 DOM 操作上手*/
+
+
+/** 
+ * Homepage Style
+ * Standard Layout (all parts) for Little Homepage
+ * @author SaraLiang
+ * @copyright 2019 by the author
+ *
+ */
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+}
