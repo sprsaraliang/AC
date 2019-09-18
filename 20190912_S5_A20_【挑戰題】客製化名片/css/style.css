@@ -1,0 +1,107 @@
+/*Sara Liang's 20190912_S5_A20_【挑戰題】客製化名片\css*/
+
+
+/** 
+ * Homepage Style
+ * Standard Layout (all parts) for Little Homepage
+ * @author SaraLiang
+ * @copyright 2019 by the author
+ *
+ */
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+  font-size: 14px;
+  line-height: 1.5;
+  background-color: #fff;
+  font-family: 'Montserrat', 'Noto Sans TC', sans-serif;
+  /*background-image: url('https://cdn.pixabay.com/photo/2015/04/15/01/28/background-723053_1280.jpg');*/
+  background-image: url('https://cdn.pixabay.com/photo/2018/08/13/00/44/milky-way-3602131_1280.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-size: 14px;
+  word-break: break-all;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  margin-top: 10%;
+  margin: 0 auto;
+  font-family: 'Montserrat', 'Noto Sans TC', sans-serif;
+}
+
+.controller,.namecard{
+  background: rgba(255, 255, 255, 0.7);
+  border:1px #ccc solid;
+  border-radius:10px;
+  margin:30px 10px;
+  padding:20px;
+}
+
+
+.urlimg img{
+    max-height: 150px;
+    max-width: 150px;
+    padding: 15px;
+}
+
+.form-group label{
+  padding: 5px 0px 0px 0px;
+}
+
+.container h1 {
+  padding: 50px 0  0px 50px;
+  text-align: center;
+  font-size: 40px;
+  line-height: 50px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #ffffff;
+}
+
+.theme_Write{
+ color: #000;
+ background: rgba(255, 255, 255, 0.7);
+}
+
+.theme_Black{
+ color: #FFF;
+ background: rgba(0, 0, 0, 0.7);
+}
+
+.theme_Secondary{
+ color: #fff;
+ background: rgba(1, 5, 9, 0.6);
+}
