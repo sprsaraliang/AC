@@ -1,0 +1,16 @@
+/*Sara Liang's 20190909_S5_U61_修改 DOM 節點\css*/
+
+
+/** 
+ * Homepage Style
+ * Standard Layout (all parts) for Little Homepage
+ * @author SaraLiang
+ * @copyright 2019 by the author
+ *
+ */
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+}

@@ -35,9 +35,8 @@ const addEnter = document.querySelector('#newTodo');
 addBtn.addEventListener('click', Add_debug);
 addEnter.addEventListener('keypress', Add_debug);
 
-function Add_debug(event) {
 
-  
+
   if (document.querySelector('#newTodo').value){ //input確認有值，再做相關判斷
 
       if (event.target.classList.contains('btn-info')){
@@ -50,7 +49,7 @@ function Add_debug(event) {
 
      }
   }
-}
+
 
 // Delete and check
 list.addEventListener('click', function (event) {

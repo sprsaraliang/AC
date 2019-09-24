@@ -1,0 +1,20 @@
+/*20190924_S7_A25_A25 Ajax + DOM Event_Q1只要女生\css*/
+
+
+/** 
+ * Homepage Style
+ * Standard Layout (all parts) for Little Homepage
+ * @author SaraLiang
+ * @copyright 2019 by the author
+ *
+ */
+.name_card{
+	float: left;
+	width: 300px;
+	height: 200px;
+	border-style:solid;
+	border-color: #c0c0c0;
+	border-width: 1px;
+	text-align: center;
+	margin: 5px;
+}
