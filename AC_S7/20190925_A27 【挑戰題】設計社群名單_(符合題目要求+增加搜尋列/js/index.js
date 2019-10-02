@@ -68,7 +68,7 @@ function creatHeader() {
 
 
 function creatSearch() { //搜尋BAR建立
-    html += ` <hr/>
+    html += ` <hr/><form >
                     <div class="col-12 col-sm-6" style="d-flex align-items-center justify-content-center">
                          <label>年齡：</label>
                          <input id='lbound' type='number' width='20px' oninput="if(value.length>2) value=value.slice(0,2)" placeholder="EX:20"/>
@@ -86,11 +86,10 @@ function creatSearch() { //搜尋BAR建立
                         </label>
                     </div>
                     <div class="col-12 col-sm-3" style="d-flex align-items-center justify-content-center">
-                        <form >
-                            <input type="text" id="keyword" placeholder="EX:s">
-                            <button type="submit"><i class="fa fa-search"></i></button>
-                        </form>
+                        <input type="text" id="keyword" placeholder="EX:s">
+                        <button type="submit"><i class="fa fa-search"></i></button>
                     </div>
+                  </form>
                  <div class="col-12">
                  <hr/>
                  </div> `
