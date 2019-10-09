@@ -1,0 +1,245 @@
+/*Sara Liang's 20190925_A27 【挑戰題】設計社群名單\css*/
+
+
+/** 
+ * Homepage Style
+ * Standard Layout (all parts) for Little Homepage
+ * @author SaraLiang
+ * @copyright 2019 by the author
+ *
+ */
+
+body {
+  background: url("https://images.pexels.com/photos/1824684/pexels-photo-1824684.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size:cover;
+  background-position:center bottom;
+}
+
+body,
+button,
+input,
+select,
+textarea,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  
+  font-family: 'Quicksand', sans-serif;
+}
+
+h1 {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 50px;
+  text-shadow: rgba(0, 0, 0, 0.2) 3px 2px 3px;
+}
+
+.hr {
+  padding: 15px 0;
+  margin: 15px 0;
+  height: 95%;
+}
+
+.nav-tabs {
+  color: #000;
+}
+
+.tab-content {
+  padding: 5px
+}
+
+.nav-tabs>li>a {
+  opacity: 0.8;
+  color: #f0f0f0;
+  background-color: #403F3E;
+  border: medium none;
+}
+
+.nav-tabs>li>a:hover {
+  background-color: #ffffff !important;
+  color: #000000;
+}
+
+.fa-heart {
+  font-size: 2.5rem;
+  color: #f7e3e3;
+}
+
+.modal {
+  top: 10%;
+}
+
+.card-user {
+  filter: brightness(50%);
+}
+
+.card-user:hover {
+  filter: brightness(100%);
+  transition-duration: 0.5s;
+  transition-delay: 0.1s;
+}
+
+.light-user {
+  filter: brightness(100%);
+}
+
+.loveheart {
+  color: #F42069;
+  font-size: 3.5rem;
+  transition-duration: 0.8s;
+  transition-delay: 0.1s;
+}
+
+
+
+.search-bar {
+  color: #FFF;
+}
+
+.fa-search {
+  padding: 5px;
+}
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+  background-color: #F42069!important;
+}
+
+.custom-checkbox .custom-control-input:checked:focus~.custom-control-label::before {
+  box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(255, 255, 255, 0.25)
+}
+
+.custom-checkbox .custom-control-input:focus~.custom-control-label::before {
+  box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(255, 255, 255, 0.25)
+}
+
+.custom-checkbox .custom-control-input:active~.custom-control-label::before {
+  background-color: #FFC09F;
+}
+
+
+/*以下為閃動愛心的loadding圖示，來自https://loading.io/css/*/
+
+.lds-heart {
+  display: inline-block;
+  position: relative;
+  width: 64px;
+  height: 64px;
+  transform: rotate(45deg);
+  transform-origin: 32px 32px;
+}
+
+.lds-heart div {
+  top: 23px;
+  left: 19px;
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  background: #f7e3e3;
+  animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.lds-heart div:after,
+.lds-heart div:before {
+  content: " ";
+  position: absolute;
+  display: block;
+  width: 26px;
+  height: 26px;
+  background: #f7e3e3;
+}
+
+.lds-heart div:before {
+  left: -17px;
+  border-radius: 50% 0 0 50%;
+}
+
+.lds-heart div:after {
+  top: -17px;
+  border-radius: 50% 50% 0 0;
+}
+
+@keyframes lds-heart {
+  0% {
+    transform: scale(0.95);
+  }
+  5% {
+    transform: scale(1.1);
+  }
+  39% {
+    transform: scale(0.85);
+  }
+  45% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}
+
+.loading {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+
+.lds-heart {
+  display: table-cell;
+  position: absolute;
+  vertical-align: middle;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+}
+
+.btn-search {
+  border: 1px solid #ebb7b7;
+  -webkit-box-shadow: #B4B5B5 1px 1px 1px;
+  -moz-box-shadow: #B4B5B5 1px 1px 1px;
+  box-shadow: #B4B5B5 1px 1px 1px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  font-size: 12px;
+  font-family: arial, helvetica, sans-serif;
+  padding: 5px;
+  text-decoration: none;
+  display: inline-block;
+  text-shadow: 0px 0px 0 rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+  color: #000000;
+  background-color: #f7e3e3;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f7e3e3), to(#ffd7d7));
+  background-image: -webkit-linear-gradient(top, #f7e3e3, #ffd7d7);
+  background-image: -moz-linear-gradient(top, #f7e3e3, #ffd7d7);
+  background-image: -ms-linear-gradient(top, #f7e3e3, #ffd7d7);
+  background-image: -o-linear-gradient(top, #f7e3e3, #ffd7d7);
+  background-image: linear-gradient(to bottom, #f7e3e3, #ffd7d7);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#f7e3e3, endColorstr=#ffd7d7);
+}
+
+.pagination>li>a,
+.pagination>li>span {
+  filter: brightness(80%);
+  border: 1px solid #ebb7b7;
+  color: #000;
+}
+
+.pagination>li.active>a {
+  background: #f7e3e3;
+  color: #000;
+}
+
+.page-item.active .page-link {
+  color: #fff;
+  background-color: #F42069;
+  border-color: #F42069;
+}
