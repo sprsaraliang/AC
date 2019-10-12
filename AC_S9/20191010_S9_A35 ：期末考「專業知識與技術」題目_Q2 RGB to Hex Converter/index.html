@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="content-language" content="zh-tw"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta content="rgb,hex,color,converter" name="keywords"/>
+    <title>20191010_S9_A35 ：期末考「專業知識與技術」題目_Q2 RGB to Hex Converter</title>
+    <meta content="簡單的線上顏色選擇器，可選擇色碼產生出rgb,hex等內容" name="description"/>
+    <!--Facebook專用語法開始-->
+    <meta property="og:image" content="fb_cover.jpg" />
+    <meta property="og:description" content="簡單的線上顏色選擇器，可選擇色碼產生出rgb,hex等內容" />
+    <meta property="og:title" content="20191010_S9_A35 ：期末考「專業知識與技術」題目_Q2 RGB to Hex Converter" />
+    <!--Facebook專用語法結束-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+      crossorigin="anonymous"/>
+      <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+      <script src="https://kit.fontawesome.com/e41a846bf2.js" crossorigin="anonymous"></script>
+      <link rel="shortcut icon" href="favicon.ico" />
+      <link href="css/style.css" rel="stylesheet"/>
+    </head>
+    <body>
+      <div class="container">
+        <div class="color-control d-flex justify-content-center align-items-center">
+          <div class="card d-flex justify-content-center align-items-center" style="width: 45rem;" >
+            <div class="card-header d-flex justify-content-center"  style="width: 100%">
+              <h3>RGB to Hex Converter</h3>
+            </div>
+            <div class="alert" role="alert">
+              <h4 class="alert-heading  text-center">文字顏色模擬區</h4>
+              <div id="test-text" width="85%">
+                <div class="text-dark px-1 py-1">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+                <div class="text-light px-1 py-1">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+              </div>
+              <ul class="list-group list-group-flush"  style="width: 100%">
+                <li class="list-group-item  d-flex justify-content-center align-items-center">
+                  R:<input id="r-panel" type="range" min="0" max="255" step="1" value="66" class="btn btn-outline-danger">
+                  <input type="text" id="rNum" size="3" value="66" class="text-center">
+                </li>
+                <li class="list-group-item  d-flex justify-content-center align-items-center">
+                  G:<input id="g-panel" type="range" min="0" max="255" step="1" value="66" class="btn btn-outline-success">
+                  <input type="text" id="gNum" size="3" value="66" class="text-center">
+                </li>
+                <li class="list-group-item  d-flex justify-content-center align-items-center">
+                  B:<input  id="b-panel" type="range" min="0" max="255" step="1" value="66" class="btn btn-outline-primary">
+                  <input type="text" id="bNum" size="3" value="66" class="text-center">
+                </li>
+                <li class="list-group-item  d-flex justify-content-center align-items-center">
+                  <input type="text" value="#424242" size="15" id="hex-output" class="text-center"/><button id="btn-copy-hex" class="btn btn-light">Copy</button>
+                </li>
+                <li class="list-group-item  d-flex justify-content-center">
+                  <input type="text" value="rgb(66,66,66)" size="15" id="rgb-output"  class="text-center"/><button id="btn-copy-rgb" class="btn btn-light" >Copy</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+        <script src="js/index.js"></script>
+        
+      </body>
+    </html>
